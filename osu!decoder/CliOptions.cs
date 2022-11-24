@@ -6,8 +6,8 @@ namespace osu_decoder_dnlib
 {
 	internal class CliOptions
 	{
-		[ValueOption(0)]
-		public string Input { get; set; }
+        [Option('i', "input", HelpText = "Path of the input file")]
+        public string Input { get; set; }
         
 		[Option('o', "output", HelpText = "Path of the output file")]
 		public string Output { get; set; }
